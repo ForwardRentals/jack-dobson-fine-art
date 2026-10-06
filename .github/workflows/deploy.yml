@@ -31,6 +31,8 @@ jobs:
       # SPA fallback: GitHub Pages serves 404.html for unknown paths, which
       # lets client-side routing handle direct loads of any sub-page
       - run: cp dist/index.html dist/404.html
+      # Per-page HTML (200 status), titles, sitemap.xml and robots.txt for search engines.
+      - run: node scripts/seo-pages.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

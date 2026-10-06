@@ -31,13 +31,12 @@ export default function App() {
 }
 
 /* ────────────────────── SEO ─────────────────────── */
-const OG_IMAGE = "https://images.unsplash.com/photo-1633141425586-16218dc3f60d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMHNub3dib2FyZCUyMGJyaXRpc2glMjBjb2x1bWJpYSUyMGFscGluZSUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NzE2MzQ1NTJ8MA&ixlib=rb-4.1.0&q=80&w=1200";
-// 👆 Replace with a hosted URL to one of Jack's actual prints once the site is live.
+const OG_IMAGE = "https://jdobsonfineart.com/og-alpenglow.jpg"; // crop of the "Alpenglow" print (public/og-alpenglow.jpg)
 
 function SEO() {
   const TITLE       = "Jack Dobson — Artist & Snowboarder | Pemberton, BC";
   const DESCRIPTION = "Limited edition fine art prints by Jack Dobson — snowboarder and artist based in Pemberton, British Columbia. Archival prints of mountain landscapes, powder runs, and the wild beauty of the Coast Mountains.";
-  const SITE_URL    = "https://jackdobson.ca";
+  const SITE_URL    = "https://jdobsonfineart.com/";
 
   return (
     <Helmet>
@@ -57,8 +56,8 @@ function SEO() {
       <meta property="og:description" content={DESCRIPTION} />
       <meta property="og:image" content={OG_IMAGE} />
       <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="800" />
-      <meta property="og:image:alt" content="Dramatic alpine landscape from the Coast Mountains near Pemberton, BC — Jack Dobson fine art prints" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Alpenglow — a snow-covered peak at sunset, limited edition print by Jack Dobson" />
       <meta property="og:locale" content="en_CA" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={TITLE} />
